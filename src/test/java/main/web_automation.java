@@ -59,6 +59,7 @@ public class web_automation {
             vs.password().sendKeys(strUtil.reading_properties("password"));
             wait.until(ExpectedConditions.visibilityOf(vs.login()));
             vs.login().click();
+            driver.close();
         }
         catch (Exception e)
         {
