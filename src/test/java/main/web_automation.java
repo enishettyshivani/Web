@@ -12,10 +12,10 @@ import org.testng.annotations.Test;
 import PageObject.PageObject;
 import org.testng.log4testng.Logger;
 
-public class web{
+public class web_automation {
     Utility strUtil = new Utility();
     public static WebDriver driver = new ChromeDriver();
-    static Logger LOG= Logger.getLogger(web.class);
+    static Logger LOG= Logger.getLogger(web_automation.class);
     @Test
     public void login() throws IOException
     {

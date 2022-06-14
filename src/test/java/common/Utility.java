@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
-import static main.web.driver;
+import static main.web_automation.driver;
 
 public class Utility {
     public void Screenshot() throws IOException
