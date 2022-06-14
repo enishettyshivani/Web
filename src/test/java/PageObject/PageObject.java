@@ -72,7 +72,7 @@ public class PageObject {
     public WebElement main_tile() { return main_tile;}
 
     //checking if de Volkskrant text is displayed
-    @FindBy(xpath="/html/body/header/div[2]/a")
+    @FindBy(xpath="//*[@id=\"pexi-tm-17059__stage\"]/div[1]/p")
     WebElement text;
     public WebElement text() { return text;}
 }

@@ -36,8 +36,17 @@ public class web_automation {
             vs.article().click();
             //tapping on the mainpage
             vs.mainpage().click();
+            wait.until(ExpectedConditions.visibilityOf(vs.text()));
             //checking for a text to be displayed in the main page
-            vs.text().getText().contains(strUtil.reading_properties("text"));
+            String text = vs.text().getText();
+            if(text.equals(strUtil.reading_properties("text")))
+            {
+                System.out.println(text+":Text is displayed");
+            }
+            else
+            {
+                System.out.println(text+":Text is not displayed");
+            }
             //tapping on the main tile
             vs.main_tile().click();
             //tapping again on the mainpage
