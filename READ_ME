@@ -1,0 +1,34 @@
+Documentation:
+* Used Intellij tool and java language for Automation.
+* Since I worked with Selenium for a long time, I have Hands on Experience on it so I have used this approach.
+
+* I have used pageobject model so that all the elements can be found at a place. You can find all the elements in
+"PageObject Package" and the file name is "PageObject"
+* In have added the functions to capture Screenshot and to access the path for properties file in "Utility" Class.You
+can find the class in "common package"
+* Stored the "url,email,password,text and keyword" in "url.properties" file so that it will be easy to change the values.
+* "web.java" is the main class in which I have created an instance to access the PageObject class and invoked the
+functions for performing an action.
+* Screenshot is captured and also error is displayed when the test is executed.
+
+* Path for the Main Class: Web - src - test - java - main - web.java
+* Path for the PageObject Class: Web - src - test - java - PageObject - PageObject.java
+* Path for the Utility Class: Web - src - test - java - common - Utility.java
+* Path for the Url.properties: Web - url.properties
+
+* Steps Automated as follows:
+1. Open Chrome Browser and go to https://www.volkskrant.nl/
+2. Agree to terms and conditions
+3. Tap on Search
+4. Enter keywords as KinderRijk
+4. tap on Search button
+5. tap on the first article
+6. tap on the main page
+7. tap on the main tile
+8. go back to main page
+9. tap on "log in als abonnee"
+10. enter the email address
+11. tap on ga verder
+12. enter the password
+13. tap on login
+
